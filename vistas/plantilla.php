@@ -10,7 +10,7 @@ session_start();
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Sistema POS</title>
+  <title>SAWAS</title>
 
 
   <!-- Tell the browser to be responsive to screen width -->
@@ -44,6 +44,10 @@ PLUGINS CSS
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
+    <!-- DataTables -->
+    <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  
+
 <!-- ===========================
 PLUGINS JAVASCRIPT
 ==================== -->
@@ -56,6 +60,11 @@ PLUGINS JAVASCRIPT
   <script src="vistas/bower_components/fastclick/lib/fastclick.js"></script>
   <!-- AdminLTE App -->
   <script src="vistas/dist/js/adminlte.min.js"></script>
+  <!-- DataTables -->
+  <script src="vistas/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="vistas/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <!-- Sweet alert -->
+  <script src="vistas/plugins/sweetalert2/sweetalert2.all.js"></script>
 
 </head>
 
@@ -88,7 +97,7 @@ CUERPO DOCUMENTO
         $_GET["ruta"] == "pintura" ||
         $_GET["ruta"] == "vehiculos" ||
         $_GET["ruta"] == "reportes" ||
-        $_GET["ruta"] == "salir" ){
+        $_GET["ruta"] == "salir"){
 
           include "modulos/".$_GET["ruta"].".php";
 
@@ -120,6 +129,7 @@ CUERPO DOCUMENTO
 ?>
 
 <script src="vistas/js/plantilla.js"></script>
+<script src="vistas/js/usuarios.js"></script>
 
 </body>   
 </html>

@@ -2,9 +2,9 @@
 
 class Conexion{
 
-	public static function conectar(){
+	static public function conectar(){
 
-		$link = new PDO("mysql:host=localhost;dbname=relcarsem",
+		$link = new PDO("mysql:host=localhost;dbname=sawas",
 			            "root",
 			            "");
 
